@@ -1550,6 +1550,8 @@ void LawnApp::UpdatePlayTimeStats()
 
 void LawnApp::UpdateFrames()
 {
+	UpdateGamepadInput();
+
 	if ((!mActive || mMinimized) && mBoard)
 	{
 		mBoard->ResetFPSStats();

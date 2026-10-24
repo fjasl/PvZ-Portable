@@ -221,6 +221,8 @@ public:
 	void							UpdateFrames() override;
 	bool							UpdateAppStep(bool* updated) override;
 	bool							UpdateApp() override;
+	// Synthesizes mouse/keyboard input from a gamepad (Lawn/System/GamepadInput.cpp).
+	void							UpdateGamepadInput();
 	bool					IsAdventureMode();
 	bool					IsSurvivalMode();
 	bool							IsContinuousChallenge();
